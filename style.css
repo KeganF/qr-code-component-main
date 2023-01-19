@@ -1,0 +1,69 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+    --clr-shadow: hsla(212, 45%, 82%, 0.5);
+
+    --ff-regular: 'Outfit', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* Quick CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Styling */
+body {
+    font-family: var(--ff-regular);
+    font-weight: var(--fw-regular);
+    font-size: 0.938rem; /* 15px to rem */
+    color: var(--clr-grayish-blue);
+    background-color: var(--clr-light-gray);
+
+    /* Not the best option for regular use, I'm just using 
+       this to center the content for this challenge! */
+    display: grid;
+    place-content: center;
+}
+
+.qr-card {
+    /* Probably not necessary to go this indepth with
+       custom properties, but I wanted to make the
+       whole card scalable based on these two properties 
+       if needed. */
+    --image-width: 305px;
+    --card-padding: 1rem;
+
+    text-align: center;
+    padding: var(--card-padding);
+    padding-bottom: calc(var(--card-padding) * 2);
+    background-color: var(--clr-white);
+    box-shadow: 0 8px 10px var(--clr-shadow);
+    border-radius: 1rem;
+    max-width: calc(var(--image-width) + 2 * var(--card-padding));
+}
+
+.qr-card__img {
+    width: var(--image-width);
+    border-radius: 0.5rem;
+}
+
+.qr-card__content {
+    padding: var(--card-padding);
+    display: grid;
+    gap: 1rem;
+}
+
+.qr-card__title {
+    font-size: 1.5rem;
+    color: var(--clr-dark-blue);
+}
