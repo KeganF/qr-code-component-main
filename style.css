@@ -53,7 +53,8 @@ body {
 }
 
 .qr-card__img {
-    width: var(--image-width);
+    width: 100%;
+    max-width: var(--image-width);
     border-radius: 0.5rem;
 }
 
