@@ -41,7 +41,7 @@ In the past I would have tried to style a card like the one in this project by h
 }
 ```
 
-For this project I tried using padding to set the dimensions of the card based on its content, which I think turned out better (looking for feedback if this is considered best practice or if it is better to stick with hard coding the card's dimensions):
+For this project I tried using padding to set the dimensions of the card based on its content, which I think turned out better (looking for feedback if this is considered best practice or if it is better to stick with hard-coding the card's dimensions):
 
 ```css
 .qr-card {
